@@ -1,0 +1,28 @@
+# Track only project deliverables and reproducible assets by default.
+/*
+!/README.md
+!/.gitignore
+!/data/
+!/data/**
+!/notebooks/
+!/notebooks/**
+!/reports/
+!/reports/**
+!/src/
+!/src/**
+
+# Ignore OS and application metadata inside tracked folders.
+desktop.ini
+**/desktop.ini
+__pycache__/
+**/__pycache__/
+*.py[cod]
+.ipynb_checkpoints/
+**/.ipynb_checkpoints/
+
+# Local artifacts.
+/docs/
+/environment/
+
+# LaTeX auxiliary build files. Keep source .tex and final PDF at reports/final/.
+/reports/final/latex/build/

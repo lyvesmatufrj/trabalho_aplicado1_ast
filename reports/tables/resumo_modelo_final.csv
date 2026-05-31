@@ -1,0 +1,7 @@
+metrica,valor
+modelo_final,"SARIMA(1,1,3)(0,1,1,12)"
+media_residuos,0.11386688247032549
+desvio_padrao_residuos,5.023254779309378
+assimetria_residuos,-2.3311240138270857
+curtose_residuos,79.34885452719466
+shapiro_pvalue,5.211921465712497e-29

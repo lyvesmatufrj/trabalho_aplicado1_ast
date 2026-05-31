@@ -1,0 +1,27 @@
+﻿\documentclass[11pt,a4paper]{article}
+
+\input{tex/preamble}
+
+\title{Modelagem ARIMA/SARIMA da série mensal de volume de vendas da PMC}
+\author{Lenardo Yves \\ DRE 120041695}
+\date{Análise de Séries Temporais - MAD485 \\ Professor João Batista M. Pereira \\ Período 2026.1}
+
+\begin{document}
+
+\maketitle
+
+\begin{abstract}
+Este relatório analisa a série mensal do índice de volume de vendas da Pesquisa Mensal de Comércio, com o objetivo de ajustar modelos ARIMA/SARIMA e produzir previsões de curto prazo com incerteza associada. A seleção do modelo combina critérios de informação, diagnóstico residual e desempenho preditivo em uma janela de teste observada. O modelo selecionado foi um SARIMA(1,1,3)(0,1,1)$_{12}$, que apresentou MAPE de 1,35\% no período de teste de 24 meses. Os resíduos, entretanto, ainda apresentam autocorrelação pelo teste de Ljung--Box, o que é tratado como limitação do ajuste.
+\end{abstract}
+
+\input{tex/sections/01_introducao}
+\input{tex/sections/02_dados}
+\input{tex/sections/03_eda}
+\input{tex/sections/04_modelagem}
+\input{tex/sections/05_diagnostico}
+\input{tex/sections/06_previsao}
+\input{tex/sections/07_conclusao}
+\input{tex/sections/08_codigo}
+
+\end{document}
+

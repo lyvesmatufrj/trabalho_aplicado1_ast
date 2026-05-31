@@ -1,0 +1,8 @@
+﻿\section{Conclusão}
+
+O trabalho ajustou modelos ARIMA/SARIMA para a série mensal do índice de volume de vendas da PMC. A análise exploratória indicou tendência, sazonalidade e forte dependência serial em nível. Por isso, foram considerados modelos com diferenciação regular e, no caso dos modelos sazonais, diferenciação sazonal de período 12.
+
+A seleção do modelo foi feita com uma janela de teste observada, o que permitiu mensurar o risco preditivo. O modelo escolhido foi o \sarimafinal, com MAPE de 1,35\% no teste de 24 meses. Esse desempenho sugere boa capacidade de previsão de curto prazo para a série analisada.
+
+A principal limitação é o diagnóstico residual: o teste de Ljung--Box indicou autocorrelação remanescente. Assim, o modelo deve ser interpretado como um baseline SARIMA com bom desempenho preditivo, mas não como uma especificação final perfeita do processo gerador da série. Extensões naturais envolveriam investigar quebras estruturais, choques econômicos ou modelos com componentes adicionais.
+

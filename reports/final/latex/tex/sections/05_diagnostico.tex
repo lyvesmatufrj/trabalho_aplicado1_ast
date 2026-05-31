@@ -1,0 +1,31 @@
+﻿\section{Diagnóstico do modelo selecionado}
+
+O modelo \sarimafinal foi reestimado na amostra completa após a seleção com base no teste. O diagnóstico residual avaliou centralização dos resíduos, autocorrelação residual, distribuição aproximada e comportamento temporal dos erros.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{diagnostico_residuos_modelo_final.png}
+\caption{Diagnóstico dos resíduos do modelo selecionado}
+\label{fig:diagnostico}
+\end{figure}
+
+O ponto crítico do ajuste está no teste de Ljung--Box. Os p-valores foram baixos nas defasagens 6, 12, 18 e 24, indicando rejeição da hipótese de ausência de autocorrelação residual. A Tabela \ref{tab:ljung} resume os resultados.
+
+\begin{table}[H]
+\centering
+\caption{Teste de Ljung--Box para os resíduos}
+\label{tab:ljung}
+\begin{tabular}{rrr}
+\toprule
+Defasagem & Estatística & p-valor \\
+\midrule
+6 & 23,36 & 0,0007 \\
+12 & 77,82 & $1{,}07 \times 10^{-11}$ \\
+18 & 79,97 & $8{,}68 \times 10^{-10}$ \\
+24 & 80,92 & $4{,}34 \times 10^{-8}$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Portanto, o modelo selecionado apresenta bom desempenho preditivo no teste, mas não elimina completamente a dependência serial dos resíduos. Essa limitação sugere que a série pode conter choques, quebras estruturais ou componentes não capturados por um SARIMA simples. Como o enunciado solicita um relatório curto e focado em ARIMA/SARIMA, essa evidência foi registrada como limitação, em vez de expandir o trabalho para modelos mais complexos.
+

@@ -1,0 +1,17 @@
+{
+  "n_observations": 315,
+  "start": "2000-01-01",
+  "end": "2026-03-01",
+  "duplicated_dates": 0,
+  "missing_months": [],
+  "missing_values": {
+    "date": 0,
+    "pmc_volume_index": 0,
+    "selic_monthly_annualized": 0
+  },
+  "raw_columns": [
+    "date",
+    "pmc_volume_index",
+    "selic_monthly_annualized"
+  ]
+}

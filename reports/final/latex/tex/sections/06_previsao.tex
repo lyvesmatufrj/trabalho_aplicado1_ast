@@ -1,0 +1,45 @@
+﻿\section{Previsão}
+
+Antes da previsão futura, o modelo foi avaliado em uma janela de teste dentro da amostra observada. No período de abril de 2024 a março de 2026, o \sarimafinal apresentou MAE de 1,45, RMSE de 1,78 e MAPE de 1,35\%. O erro absoluto máximo foi 3,45 pontos do índice. A Figura \ref{fig:previsaoteste} compara a previsão retrospectiva com os valores observados no teste.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{previsao_teste_pmc_24m.png}
+\caption{Previsão avaliável no período de teste}
+\label{fig:previsaoteste}
+\end{figure}
+
+Em seguida, o modelo foi reestimado na amostra completa e usado para prever 12 meses à frente, de abril de 2026 a março de 2027. A Figura \ref{fig:previsaofutura} apresenta a previsão pontual e o intervalo de 95\%.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{previsao_pmc_12m.png}
+\caption{Previsão futura de 12 meses com intervalo de 95\%}
+\label{fig:previsaofutura}
+\end{figure}
+
+\begin{table}[H]
+\centering
+\caption{Previsões futuras do modelo selecionado}
+\begin{tabular}{lrrr}
+\toprule
+Mês & Previsão & Limite inferior & Limite superior \\
+\midrule
+2026-04 & 105,59 & 100,75 & 110,42 \\
+2026-05 & 110,51 & 104,76 & 116,26 \\
+2026-06 & 105,58 & 99,28 & 111,88 \\
+2026-07 & 109,88 & 103,20 & 116,56 \\
+2026-08 & 110,27 & 103,29 & 117,25 \\
+2026-09 & 106,15 & 98,90 & 113,40 \\
+2026-10 & 111,31 & 103,81 & 118,80 \\
+2026-11 & 118,34 & 110,61 & 126,07 \\
+2026-12 & 132,42 & 124,47 & 140,38 \\
+2027-01 & 107,49 & 99,31 & 115,66 \\
+2027-02 & 101,09 & 92,71 & 109,48 \\
+2027-03 & 110,49 & 101,90 & 119,08 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+Como esperado, os intervalos de previsão se tornam mais amplos conforme o horizonte aumenta. A previsão preserva o padrão sazonal da série, com valores mais elevados no fim do ano.
+

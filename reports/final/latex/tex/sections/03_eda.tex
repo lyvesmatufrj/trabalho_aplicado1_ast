@@ -1,0 +1,28 @@
+\section{Análise exploratória}
+
+A Figura \ref{fig:serie} apresenta a série em nível. Observa-se crescimento de longo prazo até meados da década de 2010, queda acentuada em períodos de choque econômico e recuperação posterior. A série também apresenta padrão sazonal, esperado em uma série mensal de comércio.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{serie_pmc.png}
+\caption{Série mensal do índice de volume de vendas da PMC}
+\label{fig:serie}
+\end{figure}
+
+A decomposição STL, apresentada na Figura \ref{fig:stl}, reforça a presença de componente sazonal mensal e de variações de tendência ao longo da amostra. Esse comportamento justifica considerar modelos SARIMA com período sazonal igual a 12.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{decomposicao_stl_pmc.png}
+\caption{Decomposição STL da série}
+\label{fig:stl}
+\end{figure}
+
+A análise de ACF e PACF em nível indica dependência serial persistente, consistente com não estacionariedade em nível e com a necessidade de diferenciação regular e sazonal. Os testes formais também apontaram nessa direção: em nível, o teste ADF não rejeitou raiz unitária, enquanto o KPSS rejeitou estacionariedade. A série com diferença regular e diferença sazonal apresentou evidências mais favoráveis à estacionariedade.
+
+\begin{figure}[H]
+\centering
+\includegraphics[width=0.92\textwidth]{acf_pacf_pmc.png}
+\caption{ACF e PACF da série em nível}
+\label{fig:acf}
+\end{figure}

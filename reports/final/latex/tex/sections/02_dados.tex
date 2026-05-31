@@ -1,0 +1,27 @@
+﻿\section{Descrição dos dados}
+
+A base utilizada contém 315 observações mensais, de janeiro de 2000 a março de 2026. A série modelada é o índice de volume de vendas da Pesquisa Mensal de Comércio, denotado por \texttt{pmc\_volume\_index}. A escala temporal é mensal, com datas registradas no primeiro dia de cada mês.
+
+O arquivo bruto utilizado no projeto é \path{data/raw/dataset_pmc_selic_monthly.csv}. Para a modelagem univariada foi gerada uma base tratada em \path{data/processed/pmc_monthly_model_input.csv}, contendo apenas as colunas \texttt{date} e \texttt{pmc\_volume\_index}. Não foram identificadas lacunas mensais nem valores ausentes na série principal.
+
+\begin{table}[H]
+\centering
+\caption{Estatísticas descritivas da série PMC}
+\begin{tabular}{lr}
+\toprule
+Estatística & Valor \\
+\midrule
+Número de observações & 315 \\
+Média & 81,78 \\
+Desvio-padrão & 22,29 \\
+Mínimo & 43,32 \\
+Primeiro quartil & 60,04 \\
+Mediana & 88,92 \\
+Terceiro quartil & 97,52 \\
+Máximo & 131,81 \\
+Assimetria & -0,18 \\
+Curtose & -0,97 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
