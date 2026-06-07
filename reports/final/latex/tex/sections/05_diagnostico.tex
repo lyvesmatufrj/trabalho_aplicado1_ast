@@ -2,6 +2,8 @@
 
 O modelo \sarimafinal foi reestimado na amostra completa após a seleção com base no teste. O diagnóstico residual avaliou centralização dos resíduos, autocorrelação residual, distribuição aproximada e comportamento temporal dos erros.
 
+O modelo assume que, após uma diferenciação regular e uma diferenciação sazonal de período 12, a série se torna aproximadamente estacionária. Na escala diferenciada, a dependência temporal é representada pelos componentes autorregressivos e de médias móveis especificados, com erros de média zero, variância aproximadamente constante e ausência de autocorrelação serial. A especificação é univariada, não inclui variáveis exógenas nem tendência determinística explícita. Essas suposições são avaliadas por meio do diagnóstico dos resíduos.
+
 \begin{figure}[H]
 \centering
 \includegraphics[width=0.92\textwidth]{diagnostico_residuos_modelo_final.png}

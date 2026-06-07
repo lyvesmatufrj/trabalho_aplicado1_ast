@@ -1,8 +1,8 @@
 ﻿\section{Descrição dos dados}
 
-A base utilizada contém 315 observações mensais, de janeiro de 2000 a março de 2026. A série modelada é o índice de volume de vendas da Pesquisa Mensal de Comércio, denotado por \texttt{pmc\_volume\_index}. A escala temporal é mensal, com datas registradas no primeiro dia de cada mês.
+A base utilizada contém 315 observações mensais, de janeiro de 2000 a março de 2026. A série modelada é o índice de volume de vendas da Pesquisa Mensal de Comércio (PMC), pesquisa divulgada pelo Instituto Brasileiro de Geografia e Estatística (IBGE), denotado no projeto por \texttt{pmc\_volume\_index}. A escala temporal é mensal, com datas registradas no primeiro dia de cada mês.
 
-O arquivo bruto utilizado no projeto é \path{data/raw/dataset_pmc_selic_monthly.csv}. Para a modelagem univariada foi gerada uma base tratada em \path{data/processed/pmc_monthly_model_input.csv}, contendo apenas as colunas \texttt{date} e \texttt{pmc\_volume\_index}. Não foram identificadas lacunas mensais nem valores ausentes na série principal.
+O arquivo consolidado utilizado como entrada do projeto é \path{data/raw/dataset_pmc_selic_monthly.csv}. Para a modelagem univariada foi gerada uma base tratada em \path{data/processed/pmc_monthly_model_input.csv}, contendo apenas as colunas \texttt{date} e \texttt{pmc\_volume\_index}. Não foram identificadas lacunas mensais nem valores ausentes na série principal.
 
 \begin{table}[H]
 \centering
